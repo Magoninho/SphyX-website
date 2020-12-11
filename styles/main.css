@@ -5,13 +5,17 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    color: white;
+}
+html {
+    height: 100%;
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: aliceblue;
+    background-image: url(https://w.wallhaven.cc/full/6q/wallhaven-6qx916.png);
     transition: all 1s;
     font-family: "Rubik";
 
@@ -23,6 +27,9 @@ nav {
     width: 100%;
     font-family: "Russo One", sans-serif;
 
+}
+li {
+    display: inline-block;
 }
 nav ul {
     float: right;
@@ -86,14 +93,16 @@ nav label {
 }
 
 iframe {
-    
-    margin-right: 10%;
-    float: right;
     align-items: right;
 }
 
-.container-fluid {
-    margin: 50px auto;
+
+.selected {
+    text-decoration: underline;
+}
+
+.list-group-item {
+    color: black !important;
 }
 
 /* mediano */
@@ -113,7 +122,7 @@ iframe {
         line-height: 70px;
     }
     nav ul li {
-        display: inline-block;
+        /* display: inline-block; */
         line-height: 70px;
     }
     .checkbutton {
